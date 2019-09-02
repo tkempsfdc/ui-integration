@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <% include ../partials/ldOut %>
+  </head>
+  <body class="slds">
+    <header>
+    </header>
+    <main>
+      <div >
+        <p>Lightning Out Demo</p>
+        <div id="leaderboard"></div>
+          </div>
+      </main>
+        <footer>
+        </footer>
+        <script>
+          var url = "<%= ouathLightningURL %>";
+          var token = "<%= oauthtoken %>";
+          console.log(url);
+            $Lightning.use("c:ui_integration", function() {
+                  $Lightning.createComponent("c:wirelistview", {},
+                     "leaderboard",
+                      function(cmp) {
+                        console.log("LWC component was created");
+                      });
+                      $Lightning.createComponent("c:miscrestapicall", {},
+                     "leaderboard",
+                      function(cmp) {
+                        console.log("LWC component was created");
+                      });
+                      $Lightning.createComponent("c:libschartjs", {},
+                     "leaderboard",
+                      function(cmp) {
+                        console.log("LWC component was created");
+                      });
+            },url,token );
+        </script>
+  </body>
+</html>
