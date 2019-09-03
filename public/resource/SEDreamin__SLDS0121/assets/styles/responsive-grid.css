@@ -1,0 +1,14 @@
+.container_ui_integration {
+  display: flex;
+}
+
+.section_ui_integration {
+  flex: 1; /*grow*/
+  border: 0px solid;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .container_zavesti {
+    flex-direction: column;
+  }
+}
