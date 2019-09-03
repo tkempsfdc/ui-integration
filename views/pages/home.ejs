@@ -9,7 +9,7 @@
     <main>
       <div style="margin:100px; padding:100px; border:1px solid #ccc;">
         <p>Lightning Out Demo</p>
-        <div id="box1"></div>
+        <div id="leaderboard"></div>
      
           </div>
       </main>
@@ -21,17 +21,17 @@
           console.log(url);
             $Lightning.use("c:ui_integration", function() {
                   $Lightning.createComponent("c:wirelistview", {},
-                     "box1",
+                     "leaderboard",
                       function(cmp) {
                         console.log("LWC component was created");
                       });
                       $Lightning.createComponent("c:miscrestapicall", {},
-                     "box1",
+                     "leaderboard",
                       function(cmp) {
                         console.log("LWC component was created");
                       });
                       $Lightning.createComponent("c:libschartjs", {},
-                     "box1",
+                     "leaderboard",
                       function(cmp) {
                         console.log("LWC component was created");
                       });
