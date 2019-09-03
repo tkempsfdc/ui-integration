@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 768px) { /*breakpoint*/
-  .container_zavesti {
+  .container_ui_integration {
     flex-direction: column;
   }
 }
