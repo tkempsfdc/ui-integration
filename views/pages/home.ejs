@@ -28,17 +28,17 @@
           var token = "<%= oauthtoken %>";
           console.log(url);
             $Lightning.use("c:integration", function() {
-                  $Lightning.createComponent("c:wirelistview", {},
+                  $Lightning.createComponent("c:wireListView", {},
                      "box1",
                       function(cmp) {
                         console.log("LWC component was created");
                       });
-                      $Lightning.createComponent("c:miscrestapicall", {},
+                      $Lightning.createComponent("c:miscRestApiCall", {},
                      "box2",
                       function(cmp) {
                         console.log("LWC component was created");
                       });
-                      $Lightning.createComponent("c:createUIRecord", {},
+                      $Lightning.createComponent("c:miscGetUserId", {},
                      "box3",
                       function(cmp) {
                         console.log("LWC component was created");
