@@ -2,12 +2,13 @@ var nforce = require('nforce');
 var express = require('express');
 var port = process.env.PORT || 3000;
 
+
 var org = nforce.createConnection({
   clientId: process.env.CONSUMER_KEY,
   clientSecret: process.env.CONSUMER_SECRET,
   redirectUri: 'https://arcane-fjord-08472.herokuapp.com/oauth/_callback',
   apiVersion: 'v48.0',  // optional, defaults to current salesforce API version
-  environment: 'sandbox',  // optional, salesforce 'sandbox' or 'production', production default
+  environment: 'sandbox',  // optional, salesforce 'sandbox' for a scratch org or 'production', production default
   mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
 });
 
