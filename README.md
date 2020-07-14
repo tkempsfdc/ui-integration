@@ -1,6 +1,9 @@
 #UI Integration
 Lightning Out on NodeApp 
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 This is a sample lightning component running on Heroku .
 https://my-ui-integration.herokuapp.com/ (replace with your heroku app)
 
