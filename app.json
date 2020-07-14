@@ -1,0 +1,6 @@
+{
+  "name": "Lightning Out App",
+  "description": "An app that demonstrates lightning out",
+  "repository": "https://github.com/tkempsfdc/ui-integration",
+  "keywords": ["node", "sfdc", "lightningout"]
+}
