@@ -17,6 +17,8 @@ The LIGHTNING_URL needs to be the URL of the org hosting the lwc-recipes compone
 Line 3 of ldOut.ejs needs to reference the source of the lightning out script
 <script src="https://{yoursalesforcedomain}.lightning.force.com/lightning/lightning.out.js"></script>
 
+Follow the [instructions for Lightning Out setup](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/lightning_out_requirements.htm)
+
 CORS settings need to be set in the Salesforce org for the Lighting Out components to render, like
 ![Salesforce CORS Setup](readmeassets/CORS.png?raw=true "CORS Setup")
 You may use a wildcard for protyping purposes
