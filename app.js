@@ -7,7 +7,7 @@ var org = nforce.createConnection({
   clientSecret: process.env.CONSUMER_SECRET,
   redirectUri: 'https://arcane-fjord-08472.herokuapp.com/oauth/_callback',
   apiVersion: 'v48.0',  // optional, defaults to current salesforce API version
-  environment: 'production',  // optional, salesforce 'sandbox' or 'production', production default
+  environment: 'sandbox',  // optional, salesforce 'sandbox' or 'production', production default
   mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
 });
 
