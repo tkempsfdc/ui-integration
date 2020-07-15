@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000;
 var org = nforce.createConnection({
   clientId: process.env.CONSUMER_KEY,
   clientSecret: process.env.CONSUMER_SECRET,
-  redirectUri: 'https://arcane-fjord-08472.herokuapp.com/oauth/_callback',
+  redirectUri: process.env.CALLBACK_URL,
   apiVersion: 'v48.0',  // optional, defaults to current salesforce API version
   environment: 'sandbox',  // optional, salesforce 'sandbox' for a scratch org or 'production', production default
   mode: 'multi' // optional, 'single' or 'multi' user mode, multi default
